@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenCmdHere</title>
+</head>
+<body>
+    <h1>OpenCmdHere</h1>
+    <p>An NVDA add-on that opens an elevated Command Prompt in the current Explorer folder with a single keyboard shortcut.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Opens Command Prompt as Administrator in the current Explorer folder.</li>
+        <li>Falls back to <code>C:\Windows\System32</code> if no Explorer window is active.</li>
+        <li>Uses a conflict-free default shortcut (<code>NVDA + Control + Windows + C</code>) that can be customized by the user.</li>
+        <li>Provides audio feedback via NVDA's speech.</li>
+    </ul>
+
+    <h2>Keyboard Shortcut</h2>
+    <ul>
+        <li><strong>NVDA + Control + Windows + C</strong>: Open Command Prompt as Administrator in the current folder</li>
+    </ul>
+
+    <h2>How to Use</h2>
+    <ol>
+        <li>Open any folder in Windows Explorer.</li>
+        <li>Press <strong>NVDA + Control + Windows + C</strong>.</li>
+        <li>NVDA will announce "Opening Command Prompt...".</li>
+        <li>A UAC prompt will appear. Confirm it.</li>
+        <li>Command Prompt will open in the current folder with administrator privileges.</li>
+    </ol>
+    <p>If no Explorer window is active, Command Prompt will open in <code>C:\Windows\System32</code>.</p>
+
+    <h3>Changing the Shortcut</h3>
+    <p>If you prefer a different key combination:</p>
+    <ol>
+        <li>Open the NVDA menu (<strong>NVDA + N</strong>).</li>
+        <li>Go to <strong>Preferences</strong> → <strong>Input Gestures</strong>.</li>
+        <li>In the tree view, find <strong>OpenCmdHere</strong>.</li>
+        <li>Select <strong>Open Command Prompt as Administrator in the current Explorer folder</strong>.</li>
+        <li>Click <strong>Add</strong>, press your desired key combination, and confirm.</li>
+        <li>Click <strong>OK</strong>.</li>
+    </ol>
+
+    <h2>Requirements</h2>
+    <ul>
+        <li>NVDA version 2019.3 or later.</li>
+        <li>Windows 10 or Windows 11.</li>
+    </ul>
+
+    <h2>More Information</h2>
+    <p>Visit the GitHub repository: <a href="https://github.com/roohank/OpenCmdHere">https://github.com/roohank/OpenCmdHere</a></p>
+</body>
+</html>
